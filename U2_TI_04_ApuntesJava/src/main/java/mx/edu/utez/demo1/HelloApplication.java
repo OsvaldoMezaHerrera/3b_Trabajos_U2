@@ -37,6 +37,8 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(vbox, 500, 240);
 
         stage.setTitle("Hello!");
+        Image image = new Image(getClass().getResourceAsStream("Images/imagen1.png"));
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
     }
